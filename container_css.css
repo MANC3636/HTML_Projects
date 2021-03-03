@@ -1,0 +1,26 @@
+/* GLOBAL STYLES */ * {
+box-sizing: border-box;
+}
+
+body {
+background-color: #AAA;
+}
+
+.item {
+border: 5px solid #87b5ff;
+border-radius: 3px;
+font-size: 1em;
+font-family: sans-serif;
+font-weight: bold;
+background-color: #1c57b5;
+}
+.first-container{
+float:left;
+margin-left: 30px;
+height: 200px;
+background-color: #fafa44;
+}
+
+.third-container {
+display: grid;
+}

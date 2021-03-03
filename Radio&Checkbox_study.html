@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio & Checkbox study</title>
+</head>
+
+<style>
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+<body>
+
+<form id="form query" method="post" action="" name="questions">
+    <p>name, email and website will appear in two column format</p>
+    <div class ="row">
+        <div class="column">
+    <label for="name"> Your name  </label><br>
+    <input type="text" name="name" id="name"><br>
+
+    <label for="email"> email, separated by comma  </label><br>
+    <input type="email"  id="email" name="email" multiple><br><br>
+
+    </div>
+        <div class="column": >
+            <label for="Website"> website  </label><br>
+            <input type="url"  id="website" name="email"><br><br>
+        </div>
+
+</div>
+    <fieldset>
+        <legend>What is your favorite subject?</legend>
+        <p>with radio buttons only one option</p>
+    <label for="math"> math  </label> <input type="radio"  id="math" checked name="fav_subj" value="math"><br>
+    <label for="history"> history  </label> <input type="radio"  id="history" name="fav_subj" value="history"><br>
+    <label for="art"> art </label> <input type="radio"  id="art" name="fav_subj" value="art"><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>What do you want to study?</legend>
+        <p>with checkboxes I can select several options</p>
+    <label for="coding"> coding  </label> <input type="checkbox"  id="coding" checked name="desired subj" value="coding"><br>
+    <label for="algebra"> algebra  </label> <input type="checkbox"  id="algebra" name="fav_subj" value="algebra"><br>
+    <label for="drawing"> graphic art </label> <input type="checkbox"  id="drawing" name="fav_subj" value="drawing"><br>
+
+    </fieldset><br><br>
+
+    <fieldset>
+        <legend>What do you want to study?</legend>
+        <p>what follows is select boxes; I could have used label for instead of legend</p>
+        <select name="classes preferred" id="classes" multiple>
+            <option value="morning classes">Morning classes</option>
+            <option value="afternoon classes">Afternoon classes</option>
+        </select>
+    </fieldset><br><br>
+
+    <fieldset>
+        <label for ="hobbies">What are your hobbies?</label>
+        <p>labels behave differently fm legends in fieldsets </p>
+        <p>what follows is select boxes; I'm using optgroups. I can't select multiple items</p>
+        <select name="hobbies" id="hobbies" multiple size="7">
+            <optgroup label="music">
+                <option value="opera">opera</option>
+            <option value="jazz">jazz</option>
+            </optgroup>
+            <optgroup label="movies">
+                <option value="sci fi">sci fi</option>
+            <option value="hist fiction ">historical fiction</option>
+            </optgroup>
+
+
+        </select>
+    </fieldset><br><br>
+
+    <input type="submit">
+</form>
+
+</body>
+</html>

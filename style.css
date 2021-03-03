@@ -1,0 +1,24 @@
+body{
+color: red;
+background: Black;
+/*comment*/
+font-family:Arial, Helvetica, sans-serif;
+font-size:14;
+font-weight: normal;
+
+line-height:1.6em;
+margin:12;}
+
+
+/*container ain't working; what am i doing wrong*/
+/*.container{
+    width:30%;
+    margin:auto;}
+/*using box class*/
+/*.box-1{background-color:#333;
+        color:#fff;
+        border:40px red Solid;
+        padding:100px;
+        margin:100px;*/
+}
+.cols{columns:3 250px;}

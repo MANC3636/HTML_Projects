@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two column form</title>
+</head>
+
+<style>
+.column {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column2 {
+  float: left;
+  width: flexible;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+<body>
+
+<form id="form query" method="post" action="" name="questions">
+    <p>using css styling, the following info appears in 2-col format: name, email and website</p>
+    <fieldset>
+        <legend>communication data</legend>
+    <div class ="row">
+        <div class="column">
+    <label for="name"> Parent Name  </label><br>
+    <input type="text" name="name" id="name"><br>
+
+    <label for="email"> main email  </label><br>
+    <input type="email"  id="email" name="email"><br>
+
+    <label for="tel num"> primary tel num  </label><br>
+    <input type="tel"  id="tel num"   name="tel num"><br>
+    <fieldset>
+        <legend>What is the child's residence?</legend>
+
+    <label for="DC"> DC  </label> <input type="radio"  id="DC" checked name="residence" value="DC"><br>
+    <label for="Virginia"> Virginia  </label> <input type="radio"  id="Virginia" name="residence" value="VA"><br>
+    <label for="Maryland"> Maryland </label> <input type="radio"  id="Maryland" name="residence" value="MD"><br>
+
+    </fieldset><br><br>
+
+
+    </div>
+        <div class="column": >
+            <p>Please enter name, grade, school and birthday of child</p>
+            <label for="applicant name"> applicant child name  </label><br>
+            <input type="name"  id="applicant name" name="applicant name"><br><br>
+
+            <label for="grade"> child's grade as test </label><br>
+            <input type="text"  id="grade" name="applicant grade"><br><br>
+
+            <label for="applicant's school"> child's school </label><br>
+            <input type="text"  id="applicant's school" name="applicant's school"><br><br>
+
+            <label for="birthday"> child's birthday  </label><br>
+            <input type="date"  id="birthday" min="2007-01-01" max="2000-01-01" name="birthday"><br>
+        </div>
+        <div class="column": >
+            <p>If there is a second child for the MANC, please register that one here</p>
+            <label for="other child"> second child's name  </label><br>
+            <input type="name"  id="other child" name="2d child"><br><br>
+
+            <label for="2d child's grade"> child's grade, as text </label><br>
+            <input type="text"  id="2d child's grade" name="applicant grade"><br><br>
+
+            <label for="2d child's school"> child's school </label><br>
+            <input type="text"  id="2d child's school" name="2d child's school"><br><br>
+
+            <label for="2d child's birthday"> child's birthday  </label><br>
+            <input type="date"  id="2d child's birthday" min="2007-01-01" max="2000-01-01" name="2d child's birthday"><br>
+
+        </div><br>
+    </div>
+    </fieldset>
+<br>
+
+    <fieldset>
+        <legend>info on primary applicant's interests</legend>
+
+        <div class="column">
+        <p>pick one: preferred math to study</p>
+    <label for="pre-algebra">pre-algebra  </label> <input type="radio"  id="pre-algebra" checked name="fav_math" value="pre-alg"><br>
+    <label for="algebra I"> algebra  </label> <input type="radio"  id="algebra I" name="fav_math" value="alg"><br>
+            <label for="geometry">geometry </label> <input type="radio"  id="geometry" name="fav_math" value="geo"><br>
+            <label for="algebra II"> algebra II </label> <input type="radio"  id="algebra II" name="fav_math" value="alg2"><br></div>
+
+        <div class="column">
+            <br>
+        <legend>has (s)he studied a programming or a programming language?</legend>
+
+        <select name="classes preferred" id="classes" multiple>
+            <option value="programming concepts">programming concepts (e.g, Scratch)</option>
+            <option value="some programming experience ">HTML, Code.org, etc.</option>
+            <option value="some OOP knowledge">An OOP language: Java, Python, C++</option></select></div>
+ </select>
+        <p>pick all that apply: my child is interested in:</p>
+    <label for="video games"> video games  </label> <input type="checkbox"  id="video games" checked name="primary's interest" value="video games"><br>
+    <label for="medicine"> medicine, surgery, med research  </label> <input type="checkbox"  id="medicine" name="primary's interest" value="medicine"><br>
+    <label for="science"> science, e.g., biology, chemistry </label> <input type="checkbox"  id="science" name="primary's interest" value="science"><br>
+    <label for="engineering"> engineering </label> <input type="checkbox"  id="engineering" name="primary's interest" value="engineering"><br><br>
+    <label for="int not listed">none of the above </label> <input type="checkbox"  id="int not listed" name="primary's interest" value="no STEM interest"><br><br>
+        </div><br>
+ </fieldset><br>
+
+</div>
+    <fieldset>
+        <legend>awaiting questions</legend>
+    <p>none</p>
+    </fieldset><br><br>
+
+    <fieldset>
+        <label for ="hobbies">this is a label: What are your hobbies?</label>
+        <p>labels behave differently fm legends in fieldsets </p>
+        <p>what follows is select boxes; I'm using optgroups. I can't select multiple items</p>
+        <select name="hobbies" id="hobbies" multiple size="7">
+            <optgroup label="music">
+                <option value="opera">opera</option>
+            <option value="jazz">jazz</option>
+            </optgroup>
+            <optgroup label="movies">
+                <option value="sci fi">sci fi</option>
+            <option value="hist fiction ">historical fiction</option>
+            </optgroup>
+
+
+        </select>
+    </fieldset><br><br>
+</div>
+    <input type="submit">
+</form>
+
+</body>
